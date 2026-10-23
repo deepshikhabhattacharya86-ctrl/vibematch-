@@ -408,6 +408,7 @@ function showResult() {
     app.innerHTML = `
         <div class="result-card">
             <p class="small-title">🧪 VIBEMATCH RESULT</p>
+            <div id="last-vibe" class="last-vibe"></div>
 
             <div class="vibe-emoji">
                 ${currentVibe.emoji}
@@ -437,6 +438,19 @@ function showResult() {
                 🔄 Take It Again
             </button>
         </div>
+    `;
+}
+const savedVibe = localStorage.getItem("vibeMatchLastVibe");
+const lastVibeBox = document.querySelector("#last-vibe");
+
+if (savedVibe && lastVibeBox) {
+    const last = JSON.parse(savedVibe);
+
+    lastVibeBox.innerHTML = `
+        DIL0
+        DIL1
+        DIL2
+        DIL3
     `;
 }
 
