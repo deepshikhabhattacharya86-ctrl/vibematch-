@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 42px;
+}
+
+button {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.answers button {
+    width: 100%;
+    background: #f0edff;
+    transition: 0.2s;
+}
+
+.answers button:hover {
+    transform: scale(1.02);
+}
+.result-card {
+    text-align: center;
+}
+
+.small-title {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.vibe-emoji {
+    font-size: 70px;
+    margin: 20px 0;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.score-box {
+    margin: 25px 0;
+    padding: 15px;
+    border-radius: 15px;
+    background: #f5f3ff;
+}
+
+.score-box p {
+    margin: 8px;
+}
+
+.progress {
+    font-size: 14px;
+    opacity: 0.6;
+}
